@@ -115,7 +115,7 @@ header {
 }
 
 .banner-photo {
-    height: 300px;
+    height: 400px;
     overflow: hidden;
     img {
         width: 100%;
@@ -149,34 +149,17 @@ footer {
             border-bottom: 1px solid $white;
         }
     }
-    .column {
-        display: inline-block;
-        width: 50%;
-        vertical-align: top;
-        padding: 0 10px;
-        font-size: 16px;
-        h3 {
-            margin-top: 0;
-        }
-        li {
-            margin-bottom: 5px;
-        }
-    }
-    p.download-contract {
-        margin-top: 20px;
-        text-align: center;
-        a {
-            display: inline-block;
-            background: $light-blue;
-            border: 3px solid $light-blue;
-            padding: 10px 20px;
-            text-transform: uppercase;
-            font-family: $sans-serif;
-            letter-spacing: 2px;
-            transition: background 0.2s;
-            &:hover {
-                color: $light-blue;
-                background: $white;
+    table {
+        width: 100%;
+        td {
+            padding: 0 10px;
+            font-size: 16px;
+            vertical-align: top;
+            h3 {
+                margin-top: 0;
+            }
+            li {
+                margin-bottom: 10px;
             }
         }
     }

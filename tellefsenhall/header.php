@@ -4,7 +4,7 @@
         <meta charset="<?php bloginfo('charset'); ?>" />
         <title><?php page_title(); ?></title>
         <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/img/favicon.png" />
-        <link href="https://fonts.googleapis.com/css?family=Oswald|PT+Serif:400,400i" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Oswald|PT+Serif:400,400i,400b,400bi" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" />
         <?php wp_head(); ?>
     </head>
@@ -26,6 +26,6 @@
         </header>
         <!-- replace photo -->
         <div class="banner-photo">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/test.jpg">
+            <img src="<?php the_field('image'); ?>">
         </div>
         <div class="content">
