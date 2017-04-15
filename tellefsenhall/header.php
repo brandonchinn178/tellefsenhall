@@ -9,12 +9,15 @@
         <?php wp_head(); ?>
     </head>
     <body>
-        <?php
-            wp_nav_menu(array(
-                'container' => 'nav',
-                'theme_location' => 'primary',
-            ));
-        ?>
+        <nav>
+            <?php
+                wp_nav_menu(array(
+                    'container' => false,
+                    'theme_location' => 'primary',
+                ));
+            ?>
+            <img src="<?php echo get_template_directory_uri(); ?>/img/highstepper.png">
+        </nav>
         <header>
             <a href="/" class="banner">
                 <img class="logo" src="<?php echo get_template_directory_uri(); ?>/img/logo.png">
@@ -24,8 +27,14 @@
                 </div>
             </a>
         </header>
-        <!-- replace photo -->
-        <div class="banner-photo">
-            <img src="<?php the_field('image'); ?>">
-        </div>
+
+        <?php
+            $image = get_field('image');
+            if ($image):
+        ?>
+            <div class="banner-photo">
+                <img src="<?php echo $image; ?>">
+            </div>
+        <?php endif; ?>
+
         <div class="content">
