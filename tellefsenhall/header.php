@@ -8,14 +8,12 @@
         <?php wp_head(); ?>
     </head>
     <body>
-        <nav>
-            <?php
-                wp_nav_menu(array(
-                    'container' => false,
-                    'theme_location' => 'primary',
-                ));
-            ?>
-        </nav>
+        <?php
+            wp_nav_menu(array(
+                'container' => 'nav',
+                'theme_location' => 'primary',
+            ));
+        ?>
         <header>
             <a href="/" class="banner">
                 <img class="logo" src="<?php echo get_template_directory_uri(); ?>/img/logo.png">

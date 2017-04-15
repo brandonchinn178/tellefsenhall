@@ -5,7 +5,9 @@
     Author: Brandon Chinn
 */
 
-@import 'partials/settings';
+@import "partials/settings";
+
+// TODO: make responsive if too narrow
 
 /* Defaults */
 html, body, div, h1, h2, h3, h4, h5, h6, p, span, a, img, header, nav, footer, ul, li {
@@ -61,16 +63,23 @@ nav ul.menu {
     font-size: 0;
     li {
         display: inline-block;
+        &.current_page_item {
+            $background: darken($light-blue, 20);
+            background: $background;
+            a:hover {
+                background: $background;
+            }
+        }
     }
     a {
         display: inline-block;
         padding: 10px 25px 8px;
         color: $white;
-        text-decoration: none;
+        border-bottom: none;
         text-transform: uppercase;
         font-family: $sans-serif;
         transition: background 0.2s;
-        &:hover, &.active {
+        &:hover {
             background: $black;
         }
     }
@@ -110,7 +119,9 @@ header {
 }
 
 .content {
+    margin: 30px;
     padding: 30px 45px;
+    background: white;
     & > :first-child {
         margin-top: 0;
     }
