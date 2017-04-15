@@ -25,4 +25,8 @@
                 </div>
             </a>
         </header>
+        <!-- replace photo -->
+        <div class="banner-photo">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/test.jpg">
+        </div>
         <div class="content">

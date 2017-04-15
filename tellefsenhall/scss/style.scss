@@ -20,6 +20,12 @@ html, body {
     background: $off-white;
 }
 
+h1, h2, h3 {
+    font-family: $sans-serif;
+    font-weight: normal;
+    margin: 0.5em 0 0.3em;
+}
+
 h1 {
     font-size: 2em;
 }
@@ -64,7 +70,7 @@ nav ul.menu {
         text-transform: uppercase;
         font-family: $sans-serif;
         transition: background 0.2s;
-        &:hover {
+        &:hover, &.active {
             background: $black;
         }
     }
@@ -84,7 +90,7 @@ header {
             display: inline-block;
             vertical-align: middle;
             h1 {
-                font-weight: normal;
+                font-family: $serif;
             }
             p.subtitle {
                 font-style: italic;
@@ -100,6 +106,13 @@ header {
     overflow: hidden;
     img {
         width: 100%;
+    }
+}
+
+.content {
+    padding: 30px 45px;
+    & > :first-child {
+        margin-top: 0;
     }
 }
 
@@ -122,8 +135,7 @@ footer {
         vertical-align: top;
         padding: 0 10px;
         h3 {
-            font-family: $sans-serif;
-            margin-bottom: 0.5em;
+            margin-top: 0;
         }
         li {
             line-height: 1.3em;
