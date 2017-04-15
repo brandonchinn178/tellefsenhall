@@ -44,3 +44,5 @@ echo -e "\nRestarting apache workers..."
 sudo /etc/init.d/apache2 restart
 
 source /vagrant/scripts/setup_site.sh
+
+chmod -R 777 /web-root

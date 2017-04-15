@@ -9,10 +9,7 @@
                 </ul>
             </div>
             <div class="column">
-                <h2>Join Us</h2>
-                <!-- replace variables -->
-                <p>The 2017-2018 housing contract is now available!</p>
-                <p class="download-contract"><a href="#" download>Download contract</a></p>
+                <h2>Contact Us</h2>
             </div>
         </footer>
         <?php wp_footer(); ?>

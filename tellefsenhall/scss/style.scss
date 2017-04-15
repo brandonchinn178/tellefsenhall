@@ -15,11 +15,11 @@ html, body, div, h1, h2, h3, h4, h5, h6, p, span, a, img, header, nav, footer, u
     margin: 0;
     padding: 0;
     font-family: $serif;
-    font-size: 16px;
 }
 
 html, body {
     background: $off-white;
+    font-size: 16px;
 }
 
 h1, h2, h3 {
@@ -63,6 +63,7 @@ nav ul.menu {
     font-size: 0;
     li {
         display: inline-block;
+        font-size: 16px;
         &.current_page_item {
             $background: darken($light-blue, 20);
             background: $background;
@@ -78,6 +79,7 @@ nav ul.menu {
         border-bottom: none;
         text-transform: uppercase;
         font-family: $sans-serif;
+        letter-spacing: 2px;
         transition: background 0.2s;
         &:hover {
             background: $black;
@@ -87,12 +89,14 @@ nav ul.menu {
 
 header {
     padding: 25px 15px;
+    font-size: 18px;
     a.banner {
         display: inline-block;
         color: initial;
         border-bottom: none;
         img.logo {
-            height: 6em;
+            height: 100px;
+            margin-right: 10px;
             vertical-align: middle;
         }
         .titles {
@@ -100,11 +104,11 @@ header {
             vertical-align: middle;
             h1 {
                 font-family: $serif;
+                margin: 0;
             }
             p.subtitle {
                 font-style: italic;
-                margin-left: 20px;
-                margin-top: 5px;
+                margin: 0 25px;
             }
         }
     }
@@ -124,6 +128,11 @@ header {
     background: white;
     & > :first-child {
         margin-top: 0;
+    }
+    ul {
+        list-style: initial;
+        padding-left: 20px;
+        margin-left: 10px;
     }
 }
 
@@ -145,11 +154,12 @@ footer {
         width: 50%;
         vertical-align: top;
         padding: 0 10px;
+        font-size: 16px;
         h3 {
             margin-top: 0;
         }
         li {
-            line-height: 1.3em;
+            margin-bottom: 5px;
         }
     }
     p.download-contract {
@@ -162,6 +172,7 @@ footer {
             padding: 10px 20px;
             text-transform: uppercase;
             font-family: $sans-serif;
+            letter-spacing: 2px;
             transition: background 0.2s;
             &:hover {
                 color: $light-blue;

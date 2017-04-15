@@ -4,6 +4,7 @@
         <meta charset="<?php bloginfo('charset'); ?>" />
         <title><?php page_title(); ?></title>
         <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/img/favicon.png" />
+        <link href="https://fonts.googleapis.com/css?family=Oswald|PT+Serif:400,400i" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" />
         <?php wp_head(); ?>
     </head>
