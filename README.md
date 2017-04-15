@@ -2,6 +2,8 @@
 
 This code sets up a Wordpress site for Tellefsen Hall, the home of the California Marching Band, located in Berkeley, CA.
 
+Code located at http://github.com/brandonchinn178/tellefsenhall.
+
 ## Installation
 
 1. `git clone` this repository
