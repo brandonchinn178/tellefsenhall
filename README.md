@@ -5,7 +5,6 @@ This code sets up a Wordpress site for Tellefsen Hall, the home of the Californi
 Code located at http://github.com/brandonchinn178/tellefsenhall.
 
 ## Installation
-
 1. `git clone` this repository
 1. Install Virtualbox, Vagrant, and Node.js
 1. `npm install` to install grunt
@@ -18,3 +17,12 @@ Code located at http://github.com/brandonchinn178/tellefsenhall.
 
 ## Running
 1. Go to `http://localhost:8888`
+
+## Deploying
+To push code to the server, first make sure build all of the static files (`grunt build`). Then, in this directory (the same directory as the `README.md` file), run the following command:
+
+```
+scp -r tellefsenhall/* thall@juliet.he.net:/home/thall/public_html/wp-content/themes/tellefsenhall
+```
+
+Provide the correct password when prompted.
