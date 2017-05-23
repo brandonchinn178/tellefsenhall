@@ -13,7 +13,7 @@ if ( function_exists('register_field_group') ) {
                 'name' => 'image',
                 'type' => 'image',
                 'save_format' => 'url',
-                'required' => 1,
+                'required' => 0,
             ),
         ),
         'location' => array(
