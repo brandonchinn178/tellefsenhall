@@ -74,6 +74,49 @@ if ( function_exists('register_field_group') ) {
             'hide_on_screen' => array(),
         ),
     ));
+
+    // Photo gallery
+    register_field_group(array(
+        'id' => 'acf_photo_gallery',
+        'title' => 'Photo Gallery',
+        'fields' => array(
+            array(
+                'key' => 'field_5',
+                'label' => 'Title',
+                'name' => 'title',
+                'type' => 'text',
+                'required' => 1,
+            ),
+            array(
+                'key' => 'field_6',
+                'label' => 'Caption',
+                'name' => 'caption',
+                'type' => 'text',
+                'required' => 0,
+                'media_upload' => 'no',
+            ),
+            array(
+                'key' => 'field_7',
+                'label' => 'Image',
+                'name' => 'image',
+                'type' => 'image',
+                'save_format' => 'url',
+                'required' => 1,
+            ),
+        ),
+        'location' => array(
+            array(array(
+                'param' => 'post_type',
+                'operator' => '==',
+                'value' => 'photo_gallery',
+            )),
+        ),
+        'options' => array(
+            'position' => 'normal',
+            'layout' => 'no_box',
+            'hide_on_screen' => array(),
+        ),
+    ));
 }
 
 ?>

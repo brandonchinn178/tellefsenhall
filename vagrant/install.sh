@@ -1,5 +1,5 @@
 echo -e "\nUpdating apt-get..."
-sudo apt-get update
+sudo apt-get update > /dev/null
 
 echo -e "\nInstalling php..."
 sudo apt-get install php5 -y
@@ -66,8 +66,16 @@ wp option update page_on_front $(addpage "Home")
 
 addpage_menu "Tour"
 addpage_menu "History"
+addpage_menu "Gallery"
 addpage_menu "Join"
 addpage_menu "Contact"
+
+function set_template() {
+    ID=$(wp post list --post_type=page --title=$1 --format=ids)
+    wp post update $ID --page_template="$2"
+}
+
+set_template "Gallery" "templates/gallery.php"
 
 # acf plugin
 wp plugin install advanced-custom-fields --activate
